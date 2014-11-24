@@ -1,0 +1,86 @@
+<html>
+<head>
+<script type='text/javascript' src='http://lrn.icstars.org/redball.js'></script>
+<script>
+function moveup()
+{
+redball.top=redball.top-5;
+}
+function movedown ()
+{
+redball.top=redball.top+5;
+}
+function moveright()
+{
+redball.left=redball.left+5;
+}
+function moveleft ()
+{
+redball.left=redball.left-5;
+}
+function movesquare ()
+{
+redball.top=redball.top-35;
+redball.top=redball.top-35;
+redball.top=redball.top-35;
+redball.right=redball.right+35;
+redball.right=redball.right+35;
+redball.right=redball.right+35;
+redball.down=redball.down-35;
+redball.down=redball.down-35;
+redball.down=redball.down-35;
+redball.left=redball.left+35;
+redball.left=redball.left+35;
+redball.left=redball.left+35;
+}
+
+function moveupright ()
+{
+moveup ();
+moveright ();
+
+}
+
+
+function movedownright ()
+{
+movedown();
+moveright ();
+}
+function movetriangle ()
+
+{
+moveupright  ();
+moveupright  ();
+moveupright  ();
+movedownright ();
+movedownright ();
+movedownright ();
+moveleft();
+moveleft ();
+moveleft ();
+moveleft ();
+moveleft ();
+moveleft ();
+moveleft ();
+}
+
+</script>
+</head>
+<body>
+<img src="red-crystal-ball.jpg" id ="redball"/>
+<button onclick="moveup()">moveup</button>
+<button onclick="movedown()">movedown</button>
+<button onclick="moveright()">moveright</button>
+<button onclick="moveleft()">moveleft</button>
+<button onclick="movesquare()">movesquare</button>
+<button onclick="moveupright ()">moveupright</button>
+<button onclick="movedownright()">movedownright</button>
+<button onclick="moveleft()">moveleft</button>
+<button onclick="movetriangle()">movetriangle</button>
+
+
+
+</body>
+</html>
+

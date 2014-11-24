@@ -1,0 +1,317 @@
+<html>
+<head>
+<script type='text/javascript' src='http://lrn.icstars.org/redball.js'></script>
+<script>
+function moveup()
+{
+redball.top=redball.top-5;
+}
+function movedown()
+{
+redball.top=redball.top+5;
+}
+function moveright()
+{
+redball.left=redball.left+5; 
+}
+function moveleft()
+{
+if (redball.left > 0) 
+{
+redball.left=redball.left-5;
+}
+}
+function moveupleft(){
+moveup() ;
+moveleft ();
+}
+function movesquare()
+{
+redball.top=redball.top-35;
+redball.top=redball.top-35;
+redball.top=redball.top-35;
+redball.right=redball.right+35;
+redball.right=redball.right+35;
+redball.right=redball.right+35;
+redball.down=redball.down-35;
+redball.down=redball.down-35;
+redball.down=redball.down-35;
+redball.left=redball.left+35;
+redball.left=redball.left+35;
+redball.left=redball.left+35;
+redball.upleft=redball.upleft+35;
+redball.upright=redball.upright+35
+redball.downright=redball.downright+35
+redball.downleft=redball.downleft+35
+}
+
+function moveupright()
+{
+moveup ();
+moveright ();
+}
+
+
+function movedownright()
+{
+movedown();
+moveright ();
+}
+function movetriangle()
+{
+moveupright  ();
+moveupright  ();
+moveupright  ();
+movedownright ();
+movedownright ();
+movedownright ();
+moveleft();
+moveleft ();
+moveleft ();
+moveleft ();
+moveleft ();
+moveleft ();
+moveleft ();
+moveupleft ();
+downright ();
+downleft ();
+}
+
+function moveupright(){
+moveup ();
+moveright ();
+}
+function movedownright(){
+movedown ();
+moveright ();
+}
+function movedownleft(){
+movedown ();
+moveleft ();
+}
+function movex () {
+ movedownright  ();
+ movedownright  ();
+ movedownright  ();
+ movedownright  ();
+ movedownleft (); 
+ movedownleft ();
+ movedownleft ();
+ movedownleft ();
+ moveupright ();
+ moveupright ();
+ moveupright ();
+ moveupright ();
+ moveupright ();
+ moveupright ();
+ moveupright ();
+ moveupright ();
+ movedownright  ();
+ movedownright  ();
+ movedownright  ();
+ movedownright  ();
+ }
+ 
+ function moveoctagon (){
+   moveright ();
+   moveright ();
+   moveright ();
+   moveright ();
+   moveright ();
+   moveright ();
+   moveright ();
+   moveright ();
+   moveright ();
+   moveright ();
+   movedownright ();
+   movedownright ();
+   movedownright ();
+   movedownright ();
+   movedownright ();
+   movedownright ();
+   movedownright ();
+   movedownright ();
+   movedownright ();
+   movedownright ();
+movedown () ;
+movedown () ;
+movedown () ;
+movedown () ;
+movedown () ;
+movedown () ;
+movedown () ;
+movedown () ;
+movedown () ;
+movedown () ;
+movedownleft () ;
+movedownleft () ;
+movedownleft () ;
+movedownleft () ;
+movedownleft () ;
+movedownleft () ;
+movedownleft () ;
+movedownleft () ;
+movedownleft () ;
+movedownleft () ;
+moveleft () ;
+moveleft () ;
+moveleft () ;
+moveleft () ;
+moveleft () ;
+moveleft () ;
+moveleft () ;
+moveleft () ;
+moveleft () ;
+moveleft () ;
+moveupleft () ;
+moveupleft () ;
+moveupleft () ;
+moveupleft () ;
+moveupleft () ;
+moveupleft () ;
+moveupleft () ;
+moveupleft () ;
+moveupleft () ;
+moveupleft () ;
+moveup () ;
+moveup () ;
+moveup () ;
+moveup () ;
+moveup () ;
+moveup () ;
+moveup () ;
+moveup () ;
+moveup () ;
+moveup () ;
+moveupright () ;
+moveupright () ;
+moveupright () ;
+moveupright () ;
+moveupright () ;
+moveupright () ;
+moveupright () ;
+moveupright () ;
+moveupright () ;
+moveupright () ;
+}
+
+function bounce(){
+	for (var i=1; i<=15; i++){
+moveup()		
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+	}
+	for(var i=1; i<=10; i ++){
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+	}
+	for (var i=1; i<=5; i ++){
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+movedown();
+	}
+}
+
+
+</script>
+</head>
+<body>
+<img src="red-crystal-ball.jpg" id ="redball" height="100" width="100"/>
+<table>
+<tr>
+<td><button onclick="moveupleft()"><img src= "upleftarrow.jpg"height="100"width="100"/></button></td>
+<td><button<button onclick="moveup()"><img src= "uparrow.jpg"height="100"width="100"/></button></td>
+<td><button onclick="moveupright()"><img src= "uprightarrow.jpg"height="100"width="100"/></button></td>
+</tr>
+
+<tr>
+<td><button onclick="moveleft()"><img src= "leftarrow.jpg"height="100"width="100"/></button>
+<td><button onclick="movesquare()"><img src= "movesquare.jpg"height="100"width="100"/></button></td>
+<td><button onclick="moveright()"><img src= "rightarrow.jpg"height="100"width="100"/></button></td>
+</tr>
+
+<tr>
+<td><button onclick="movedownleft()"><img src= "downleftarrow.jpg"height="100"width="100"/></button>
+<td><button onclick="movedown()"><img src= "downarrow.jpg"height="100"width="100"/></button></td>
+<td><button onclick="movedownright()"><img src= "downrightarrow.jpg"height="100"width="100"/></button>
+</tr>
+
+
+
+
+<button onclick="movetriangle()"><img src= ""/></button>
+<button onclick="movex()"><img src= ""/></button>
+<button onclick="moveoctagon()"><img src= ""/></button>
+<button onclick="movebounce ()></button>
+
+<img src= ""/></button>
+
+
+
+</body>
+</html>
+
